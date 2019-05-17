@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700');
-
 body {
     font-family: "Open Sans", Montserrat, Arial;
     padding-top: 70px;
+} 
+
+.minhaimg {
+    padding-top: 1%;
+    padding-left: 7%;
 }
 
 /*Alterando navbar*/
@@ -31,70 +34,4 @@ body {
 
 .navbar {
     box-shadow: 0 0 20px #ccc;
-}
-
-/*Alterando o Carousel (banner) */
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.carousel-caption btn-success {
-    border-radius: 0;
-    background: green;
-    border: 0;
-}
-
-/*Formatação do footer*/
-
-footer {
-    background: #f1f1f1;
-    padding: 15px 0;
-    margin-top: 30px;
-}
-
-footer p a {
-    margin-left: 20px;
-    color: #333;
-}
-
-footer p a:houver {
-    color: #000;
-    text-decoration: none;
-    transition: 1s;
-}
-
-h1 {
-    font: 2em Montserrat, "Open Sans", Arial;
-    font-weight: 700;
-    color: #00A3D9;
-    text-align: center;
-    margin: 20px;
-}
-
-section hr {
-    width: 150px;
-    border: 2px solid #00A3D0;
-    margin: 20px auto;
-}
-
-@media (max-width: 480) {
-    body {
-        padding-top: 50px;
-    }
-    footer .col-12{
-        margin-bottom: 30px;
-    }
-    navbar-brand {
-        width:  200px;
-    }
-
-    navbar-brand img {
-        width:  50%;
-    }
-
-    .nav-link, .dropdown-item {
-        text-align: center;
-        padding: 10px 0;
-    }
 }
