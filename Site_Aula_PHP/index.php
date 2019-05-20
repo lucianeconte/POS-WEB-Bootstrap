@@ -5,6 +5,8 @@
     <title>BCursos OnLine - Página Inicial </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-widith, initial-scale=1">
+    
+    <base href="http://localhost/Site_Aula_PHP/">
 
     <link rel="shortcut icon" href="imagens/icon.png">
 
@@ -31,10 +33,10 @@
                 <ul class="navbar-nav ml-auto">
                     <!--mr-auto-->
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+                        <a class="nav-link" href="sobre">Quem Somos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -42,9 +44,12 @@
                             Cursos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="culinaria.html">Culinária</a>
-                            <a class="dropdown-item" href="informatica.html">Informática</a>
+                            <a class="dropdown-item" href="cursos-culinaria">Culinária</a>
+                            <a class="dropdown-item" href="cursos-informatica.html">Informática</a>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fotos.html">Fotos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contato.html">Contato</a>
@@ -90,18 +95,28 @@
     </div>
 
     <main>
-        <section id="cursos">
-            <h1>Nossos Cursos</h1>
-            <hr>
-        </section>
-        <section id="depoimentos">
-            <h1>Conheça os nossos cursos</h1>
-            <hr>
-        </section>
-        <section id="news">
-            <h1>Receba novidades</h1>
-            <hr>
-        </section>
+        <?php
+
+            $pagina = "home";
+
+            //recuperar o parametro
+            if ( isset ( $_GET["param"] )){
+
+                $param = explode("/",$_GET["param"]);
+                $pagina = ( $param[0] );
+
+                /*if ( isset ( $param[1] )){
+                    $id = trim ( $param[1]);
+                }*/
+
+            } 
+
+
+            $pagina = "paginas/".$pagina.".php";
+            
+            if (file_exists($pagina)) include $pagina;
+            else include "paginas/erro.php";
+        ?>
     </main>
 
     <footer>
@@ -125,7 +140,7 @@
                 </div>
             </div>
             <hr>
-            <div class="row">
+            <div class="row bottom">
                 <div class="col-12 col-md-6">
                     <p>2019 - Todos os direitos reservados</p>
                 </div>
