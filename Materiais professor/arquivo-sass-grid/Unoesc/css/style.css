@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,900&display=swap");
+p {
+  font: 1.2em Raleway, Tahoma, Arial;
+  color: #006DD9;
+  text-align: justify;
+}
+
+h1 {
+  font: 3em Raleway, Tahoma, Arial;
+  color: #003366;
+  text-align: center;
+}
+
+h2 {
+  @include titulo(2em);
+  text-align: center;
+}
+
+section {
+  padding: 50px 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: Raleway, Tahoma, Arial;
+  margin: 0;
+}
+
+.section {
+  width: 960px;
+  margin: auto;
+}
+.section-h2 {
+  font-weight: bold;
+}
+
+.header {
+  width: 100%;
+  background: #FFF;
+  box-shadow: 0 0 10px #333;
+  float: left;
+}
+.header-logo {
+  float: left;
+  margin: 10px;
+}
+.header-nav {
+  float: right;
+}
+.header-nav ul {
+  margin: 0;
+}
+.header-nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 70px 0;
+  float: left;
+  margin: 0 15px;
+}
+.header-link {
+  font: 1.2em Montserrat, Tahoma, Arial;
+  color: #006DD9;
+}
+.header-link:hover {
+  color: #003366;
+}
+
+.bacon img {
+  width: 100%;
+}
+.bacon-480, .bacon-320 {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .bacon-480, .bacon-800 {
+    display: none;
+  }
+  .bacon-320 {
+    display: block;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bacon-800, .bacon-320 {
+    display: none;
+  }
+  .bacon-480 {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

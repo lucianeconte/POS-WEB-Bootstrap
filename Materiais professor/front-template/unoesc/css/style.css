@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700');
+
+body {
+	font-family: "Open Sans", Montserrat, Arial;
+	padding-top: 70px;
+}
+
+
+/* Alterando o NavBar */
+
+.bg-light {
+	background: #FFF !important;
+}
+
+.nav-link, .dropdown-item {
+	font: 1.1em Montserrat, "Open Sans", Arial;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .dropdown-item:hover {
+	color: #F00;
+}
+
+.dropdown-item {
+	color: #ccc;
+}
+
+.dropdown:hover>.dropdown-menu {
+	display: block;
+}
+
+.navbar {
+	box-shadow: 0 0 30px #ccc;
+}
+
+/* Alterar o Carousel */
+
+.carousel-caption {
+	background: rgba(0,0,0,0.3)
+}
+
+.carousel-caption .btn-success {
+	border-radius: 0;
+	background: red;
+	border: 0;
+}
+
+/* formatação do footer */
+
+footer {
+	background: #f1f1f1;
+	padding: 15px 0;
+	margin-top: 30px;
+}
+
+footer p a {
+	margin-left: 20px;
+	color: #333;
+	transition: 1s;
+}
+
+footer p a:hover {
+	color: #F00;
+	text-decoration: none;
+}
+
+h1 {
+	font: 2em Montserrat, "Open Sans", Arial;
+	font-weight: 700;
+	color: #00A3D9;
+	text-align: center;
+	margin: 20px;
+}
+
+section hr {
+	width: 100px;
+	border: 2px solid #00A300;
+	margin: 20px auto;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.card {
+	border-radius: 0;
+	border: 3px solid #ccc;
+	box-shadow: 0px 0px 15px #ccc;
+}
+
+.card .card-title {
+	color: #00A3D9;
+	height: 70px;
+	font-family: Montserrat;
+}
+
+.card .card-text {
+	height: 90px;
+}
+
+#depoimentos {
+	background: url(../imagens/depoimento.jpg) fixed;
+	background-size: cover;
+}
+
+#depoimentos p {
+	font-size: 1.3em;
+	color: #FFF;
+}
+
+#depoimentos i {
+	font-size: 3em;
+}
+
+#depoimentos h1 {
+	color: #FFF;
+}
+
+#depoimentos hr {
+	border-color: #FFF;
+}
+
+section {
+	margin: 30px 0;
+	padding: 30px 0;
+}
+
+@media (max-width: 480px) {
+	body {
+		padding-top: 50px;
+	}
+	footer .col-12 {
+		margin-bottom: 30px;
+	}
+	.navbar-brand {
+		width: 200px;
+	}
+	.navbar-brand img {
+		width: 100%;
+	}
+	.nav-link, .dropdown-item {
+		text-align: center;
+		padding: 10px 0;
+	}
+	.card {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	footer .bottom p, .bottom p.text-right {
+		text-align: center !important;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 800px ) {
+	.card {
+		margin-bottom: 20px;
+	}
+}

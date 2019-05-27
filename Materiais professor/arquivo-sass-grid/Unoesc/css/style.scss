@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,900&display=swap');
+
+$cor1: #006DD9;
+$cor2: #003366;
+$cor3: #FFF;
+$font1: Montserrat, Tahoma, Arial;
+$font2: Raleway, Tahoma, Arial;
+
+@mixin texto {
+	font: 1.2em $font2;
+	color: $cor1;
+}
+
+@mixin titulo($tam) {
+	font: $tam $font2;
+	color: $cor2;
+}
+
+p {
+	@include texto;
+	text-align: justify;
+}
+
+h1 {
+	@include titulo(3em);
+	text-align: center;
+}
+
+h2 {
+	@include titulo(2em);
+	text-align: center;
+}
+
+section {
+	padding: 50px 0;
+}
+
+body {
+	font-size: 14px;
+	font-family: $font2;
+	margin: 0;
+}
+
+.section {
+	width: 960px;
+	margin: auto;
+	&-h2 {
+		font-weight: bold;
+	}
+}
+
+.header {
+	width: 100%;
+	background: $cor3;
+	box-shadow: 0 0 10px #333;
+	float: left;
+	&-logo {
+		float: left;
+		margin: 10px;
+	}
+	&-nav {
+		float: right;
+		ul {
+			margin: 0;
+			li {
+				display: inline;
+				list-style: none;
+				padding: 70px 0;
+				float: left;
+				margin: 0 15px;
+			}
+		}
+	}
+	&-link {
+		font: 1.2em $font1;
+		color: $cor1;
+		&:hover {
+			color: $cor2;
+		}
+	}
+}
+
+.bacon {
+	img {
+		width: 100%;
+	}
+	&-480, &-320 {
+		display: none;
+	}
+}
+
+@media (max-width: 320px) {
+	.bacon {
+		&-480, &-800 {
+			display: none;
+		}
+		&-320 {
+			display: block;
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.bacon {
+		&-800, &-320 {
+			display: none;
+		}
+		&-480 {
+			display: block;
+		}
+	}
+}
