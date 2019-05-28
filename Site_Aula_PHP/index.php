@@ -44,15 +44,15 @@
                             Cursos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="cursos-culinaria">Culinária</a>
-                            <a class="dropdown-item" href="cursos-informatica.html">Informática</a>
+                            <a class="dropdown-item" href="cursos_culinaria">Culinária</a>
+                            <a class="dropdown-item" href="cursos_informatica">Informática</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="fotos.html">Fotos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
+                        <a class="nav-link" href="contato">Contato</a>
                     </li>
                 </ul>
             </div>

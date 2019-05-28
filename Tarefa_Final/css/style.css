@@ -78,6 +78,32 @@ section hr {
     margin: 20px auto;
 }
 
+
+h4 {
+    font: 1.4em Montserrat, "Open Sans", Arial;
+    font-weight: 700;
+    color: rgb(51, 52, 53);
+    text-align: center;
+    margin: 20px;
+}
+
+.card  {
+    border-radius: 0;
+    border: 3px solid #ccc;
+    box-shadow: 0px 0px 15px #ccc;
+    margin-bottom: 20px;
+}
+
+.card .card-title {
+    color: #00A3D9;
+    height: 70px;
+    font-family: Montserrat;
+}
+
+.card .card-text {
+    height: 80px;
+}
+
 @media (max-width: 480) {
     body {
         padding-top: 50px;

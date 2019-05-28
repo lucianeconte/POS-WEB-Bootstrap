@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                  <img class="card-img-top" src="imagens/curso1.jpg" alt="Curso de Montagem e Manutenção">
                  <h5 class="card-title">Curso de Montagem e Manutenção</h5>
                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -17,7 +17,7 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                  <img class="card-img-top" src="imagens/curso2.jpg" alt="Curso de Pyton">
                  <h5 class="card-title">Curso de Pyton</h5>
                  <p class="card-text">Some quick example text to build on the card title.</p>
@@ -26,7 +26,7 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                  <img class="card-img-top" src="imagens/curso3.jpg" alt="Curso de PHP">
                  <h5 class="card-title">Curso de PHP</h5>
                  <p class="card-text">Some quick example text to build on the card title.</p>
@@ -35,7 +35,7 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                  <img class="card-img-top" src="imagens/curso4.jpg" alt="Curso de HTML 5">
                  <h5 class="card-title">Curso de HTML 5</h5>
                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
