@@ -8,7 +8,7 @@
         <br>
 
         <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" class="form-control" row="10" required placeholder="preencha sua mensagem"></textarea>
+        <textarea name="mensagem" class="form-control" row="10" required placeholder="Preencha sua mensagem"></textarea>
         <br>
         <button type="submit" class="btn-success btn-lg">
             <i class="fas fa-check"></i> Enviar Mensagem

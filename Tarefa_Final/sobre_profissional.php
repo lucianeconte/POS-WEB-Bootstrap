@@ -13,7 +13,7 @@
                     <h5 class="card-title">Curso de Sistemas de Informação</h5>
                     <p class="card-text">Cursei Sistemas de Informação, na Universidade do Contestado de Concórdia - SC.
                         Período de 2003 a 2006.</p>
-                    <a href="curso-sistemas" class="btn btn-primary">Ver detalhes</a>
+                    <p></p>
                 </div>
             </div>
 
@@ -23,7 +23,7 @@
                     <h5 class="card-title">Treinamento Dale Carnegie</h5>
                     <p class="card-text">Em 2015 fiz o Treinamento do Dale Carnegie. Muito desenvolvimento pessoal e
                         profissional!</p>
-                    <a href="curso-dale" class="btn btn-primary">Ver detalhes</a>
+                    <p></p>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@
                     <h5 class="card-title">Startup Weekend</h5>
                     <p class="card-text">Em 2018 participei do Startup Weekend Concórdia - SC. Ideia minha e meu grupo
                         ficou em 2º lugar.</p>
-                    <a href="sw" class="btn btn-primary">Ver detalhes</a>
+                    <p></p>
                 </div>
             </div>
 
@@ -43,7 +43,7 @@
                     <h5 class="card-title">Startup Summit</h5>
                     <p class="card-text">Em 2018 participei do Startup Summit em Florianópolis. Dois dias de imersão,
                         muito conhecimento!</p>
-                    <a href="ss" class="btn btn-primary">Ver detalhes</a>
+                    <p></p>
                 </div>
             </div>
         </div>
